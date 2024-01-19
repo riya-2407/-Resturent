@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-coloe:#666;
+    --box-shodow:0.5rem 1.5rem rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(43, 41, 41);
+    
+}
+
+label.logo{
+    font-size: 25px;
+    color: #FEA116;
+    margin: 0 100px;
+    line-height:60px ;
+}
+
+nav ul {
+    float: right;   /* sare list right ke taraf a jae ge */
+    list-style-type: none; /* list ke time jo dought ate h usko hta deta h*/
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    display: inline-block; /* sare elemnet ek line pe a  jae ge*/
+    line-height: 60px;  /* de de ne se sb  center pe a jae ga */
+}
+
+nav ul li a {
+    text-decoration: none; /* remove  underline*/
+    color: #FEA116;
+    font-size: 20px;
+    text-transform: capitalize; /* capitalater me krne ke liye first word*/
+    padding: 8px 20px; /*sare elemnet me space dene ke liye eqaliy*/
+    
+}
+
+.active{
+    font-size: 15px;
+}
+.active:hover{
+    color: rgb(255, 255, 255); 
+
+}
+/*check box*/
+#checkbtn{
+    float: right; /* sare list right ke taraf a jae ge */
+    line-height: 60px;
+    margin-right: 10px;
+    font-size: 23px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* check box ke check kren pe jo bhi ul h left se 0 ho jae ga mtlb ki check pe click krne se vo vapsa apne posyion pe a jae ga  */
+
+#check:checked ~ ul {
+    left: 0;
+
+}
+
+
+
+/* for making logo responsive*/
+
+@media(max-width: 347px){
+    label.logo{
+        font-size: 20px;
+        margin: 0px 50px;
+    }
+}
+
+/* for making responsive*/
+
+@media(max-width:916px){
+
+    label.logo{
+        margin: 0px 60px;
+    }
+    
+    #checkbtn{
+        display: block; /*yaha pe hm maximum de diye h ki itne pe ane ke baad hmara jo check box h vo show hone lge 916px ke baad*/
+
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh; /* vh ka mtlb jitna hmko dikha raha h screen pura cover kre ga vo */
+        background: rgb(233, 213, 175);
+        position: fixed;
+        top: 60px;
+        left: -100%;  /* pura gyab ho jae ga jb hm check pe click kre  ge to  a jae ga*/
+        transition: .5s; /* slid krta huva side se aega*/
+
+        
+    }
+    nav ul li{
+        display: block; /*sare elemen t ko ek ke upar ek kr deta h */
+        text-align: center; /* sare elemnet ko center pe la deta h*/
+        line-height: 35px;
+        margin: 10px;
+
+    }    
+
+}
+
+
+/*----------------------- about section     -------------------------*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* About Section Styles */
+  .about-section {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .im:hover {
+    transform: scale(1.05);
+  }
+
+
+
+
+/* 
+----------------------     Oder form        ---------------------------------------------------------------
+
+
+/* Add your custom styles here */
+.ab {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .containerrrrrr {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form-grouppp {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .ac {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .ad {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ad:hover {
+    background-color: #0056b3;
+  }
+  
+  .order-detailsss {
+    margin-top: 30px;
+  }
+  
+  #orderConfirmationnn {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .containerrrrrr {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form-grouppp {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .ac {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .ad {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ad:hover {
+    background-color: #0056b3;
+  }
+  
+  .order-detailsss {
+    margin-top: 30px;
+  }
+  
+  #orderConfirmationnn {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+
+  div#carousel { 
+    perspective: 1200px; 
+    background: #100000; 
+    padding-top: 10%; 
+    font-size:0; 
+    margin-bottom: 3rem; 
+    overflow: hidden; 
+  }
+  figure#spinner { 
+    transform-style: preserve-3d; 
+    height: 300px; 
+    transform-origin: 50% 50% -500px; 
+    transition: 1s; 
+  } 
+  figure#spinner img { 
+    width: 40%; max-width: 425px; 
+    position: absolute; left: 30%;
+    transform-origin: 50% 50% -500px;
+    outline:1px solid transparent; 
+  }
+  figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+  }
+  figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+  figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+  figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+  figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+  figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+  figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+  figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+  div#carousel ~ span { 
+    color: #fff; 
+    margin: 5%; 
+    display: inline-block; 
+    text-decoration: none; 
+    font-size: 2rem; 
+    transition: 0.6s color; 
+    position: relative; 
+    margin-top: -6rem; 
+    border-bottom: none; 
+    line-height: 0; }
+  div#carousel ~ span:hover { color: #888; cursor: pointer; }
